@@ -39,23 +39,6 @@
                     android:tint="@android:color/white"
                     app:srcCompat="@drawable/logo_small_round" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/spacing_middle"
-                    android:layout_marginRight="@dimen/spacing_middle"
-                    android:text="Rp"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-                    android:textColor="@color/grey_20"
-                    app:fontFamily="sans-serif-medium" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="350.000"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                    android:textColor="@android:color/white"
-                    android:textStyle="bold" />
 
                 <View
                     android:layout_width="0dp"
@@ -66,7 +49,7 @@
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:tint="@android:color/white"
-                    app:srcCompat="@drawable/ic_mail_outline" />
+                    app:srcCompat="@drawable/ic_baseline_notifications_24" />
 
             </LinearLayout>
 
@@ -79,98 +62,6 @@
                 app:flexWrap="nowrap"
                 app:justifyContent="space_between">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Scan"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-                        android:textColor="@android:color/white"
-                        app:fontFamily="sans-serif-medium" />
-
-                    <ImageView
-                        android:layout_width="@dimen/spacing_xmlarge"
-                        android:layout_height="@dimen/spacing_xmlarge"
-                        android:layout_marginTop="@dimen/spacing_small"
-                        android:tint="@android:color/white"
-                        app:srcCompat="@drawable/ic_center_focus_weak" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Top Up"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-                        android:textColor="@android:color/white"
-                        app:fontFamily="sans-serif-medium" />
-
-                    <ImageView
-                        android:layout_width="@dimen/spacing_xmlarge"
-                        android:layout_height="@dimen/spacing_xmlarge"
-                        android:layout_marginTop="@dimen/spacing_small"
-                        android:tint="@android:color/white"
-                        app:srcCompat="@drawable/ic_add_circle_outline" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Send"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-                        android:textColor="@android:color/white"
-                        app:fontFamily="sans-serif-medium" />
-
-                    <ImageView
-                        android:layout_width="@dimen/spacing_xmlarge"
-                        android:layout_height="@dimen/spacing_xmlarge"
-                        android:layout_marginTop="@dimen/spacing_small"
-                        android:tint="@android:color/white"
-                        app:srcCompat="@drawable/ic_open_in_new" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Request"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-                        android:textColor="@android:color/white"
-                        app:fontFamily="sans-serif-medium" />
-
-                    <ImageView
-                        android:layout_width="@dimen/spacing_xmlarge"
-                        android:layout_height="@dimen/spacing_xmlarge"
-                        android:layout_marginTop="@dimen/spacing_small"
-                        android:rotation="180"
-                        android:tint="@android:color/white"
-                        app:srcCompat="@drawable/ic_open_in_new" />
-
-                </LinearLayout>
 
             </com.google.android.flexbox.FlexboxLayout>
 
@@ -217,7 +108,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Pulsa &amp; Data"
+                                android:text="Welcome"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
                                 android:textColor="@color/grey_60"
                                 android:textStyle="bold" />
@@ -225,7 +116,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Bonus pulsa 50%"
+                                android:text="Nama Aplikasi"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                                 android:textColor="@color/red_300" />
 
@@ -235,10 +126,108 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="BUY NOW"
+                            android:text="SIGN IN"
                             android:theme="@style/Button.Blue.Borderless" />
 
                     </LinearLayout>
+
+                    <com.google.android.flexbox.FlexboxLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_mxlarge"
+                        app:flexWrap="nowrap"
+                        app:justifyContent="space_between">
+
+                        <LinearLayout
+                            android:id="@+id/favorite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/spacing_xmlarge"
+                                android:layout_height="@dimen/spacing_xmlarge"
+                                android:tint="@color/red_800"
+                                app:srcCompat="@drawable/ic_baseline_favorite_24" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/spacing_small"
+                                android:text="Favorite"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                android:textColor="@color/grey_40" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/spacing_xmlarge"
+                                android:layout_height="@dimen/spacing_xmlarge"
+                                android:tint="@color/teal_400"
+                                app:srcCompat="@drawable/ic_baseline_insights_24" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/spacing_small"
+                                android:text="Viral"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                android:textColor="@color/grey_40" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/spacing_xmlarge"
+                                android:layout_height="@dimen/spacing_xmlarge"
+                                android:tint="@color/blue_500"
+                                app:srcCompat="@drawable/ic_baseline_tips_and_updates_24" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/spacing_small"
+                                android:text="Tips"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                android:textColor="@color/grey_40" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/spacing_xmlarge"
+                                android:layout_height="@dimen/spacing_xmlarge"
+                                android:tint="@color/orange_800"
+                                app:srcCompat="@drawable/ic_baseline_auto_fix_high_24" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/spacing_small"
+                                android:text="Popular"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                android:textColor="@color/grey_40" />
+
+                        </LinearLayout>
+
+                    </com.google.android.flexbox.FlexboxLayout>
 
                     <com.google.android.flexbox.FlexboxLayout
                         android:layout_width="match_parent"
@@ -256,14 +245,14 @@
                             <ImageView
                                 android:layout_width="@dimen/spacing_xmlarge"
                                 android:layout_height="@dimen/spacing_xmlarge"
-                                android:tint="@color/orange_400"
-                                app:srcCompat="@drawable/ic_lightbulb" />
+                                android:tint="@color/yellow_A700"
+                                app:srcCompat="@drawable/ic_baseline_info_24" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/spacing_small"
-                                android:text="Electric.."
+                                android:text="About Us"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                                 android:textColor="@color/grey_40" />
 
@@ -278,14 +267,14 @@
                             <ImageView
                                 android:layout_width="@dimen/spacing_xmlarge"
                                 android:layout_height="@dimen/spacing_xmlarge"
-                                android:tint="@color/teal_400"
-                                app:srcCompat="@drawable/ic_monetization_on" />
+                                android:tint="@color/deep_purple_500"
+                                app:srcCompat="@drawable/ic_baseline_library_books_24" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/spacing_small"
-                                android:text="Cashout"
+                                android:text="Guest Book"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                                 android:textColor="@color/grey_40" />
 
@@ -300,14 +289,14 @@
                             <ImageView
                                 android:layout_width="@dimen/spacing_xmlarge"
                                 android:layout_height="@dimen/spacing_xmlarge"
-                                android:tint="@color/blue_500"
-                                app:srcCompat="@drawable/ic_games" />
+                                android:tint="@color/grey_80"
+                                app:srcCompat="@drawable/ic_baseline_contact_support_24" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/spacing_small"
-                                android:text="Games"
+                                android:text="Contact Us"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                                 android:textColor="@color/grey_40" />
 
@@ -322,14 +311,14 @@
                             <ImageView
                                 android:layout_width="@dimen/spacing_xmlarge"
                                 android:layout_height="@dimen/spacing_xmlarge"
-                                android:tint="@color/red_300"
-                                app:srcCompat="@drawable/ic_more_horiz" />
+                                android:tint="@color/pink_600"
+                                app:srcCompat="@drawable/ic_baseline_question_answer_24" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/spacing_small"
-                                android:text="See All"
+                                android:text="FAQ"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                                 android:textColor="@color/grey_40" />
 
@@ -370,7 +359,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/spacing_middle"
                         android:layout_marginRight="@dimen/spacing_middle"
-                        android:text="@string/app_name"
+                        android:text="Gallery"
                         android:textAppearance="@style/TextAppearance.AppCompat.Title"
                         android:textColor="@android:color/white"
                         app:fontFamily="sans-serif-medium" />
