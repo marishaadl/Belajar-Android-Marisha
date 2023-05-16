@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import com.owle.newsapps.adapter.SubKategoriAdapter;
 import com.owle.newsapps.utils.Tools;
 
 public class MainActivity extends AppCompatActivity {
@@ -22,6 +23,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, NewsActivity.class));
+            }
+        });
+
+        LinearLayout btn_entertain = findViewById(R.id.btn_entertain);
+        btn_entertain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, SubKategoriActivity.class));
             }
         });
     }
