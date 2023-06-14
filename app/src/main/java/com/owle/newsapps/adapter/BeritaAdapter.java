@@ -1,6 +1,8 @@
 package com.owle.newsapps.adapter;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +15,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.balysv.materialripple.MaterialRippleLayout;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
+import com.owle.newsapps.DetailNewsActivity;
+import com.owle.newsapps.NewsActivity;
 import com.owle.newsapps.R;
 import com.owle.newsapps.model.Berita;
 import com.owle.newsapps.model.SubKategori;
@@ -44,7 +48,7 @@ public class BeritaAdapter extends RecyclerView.Adapter<BeritaAdapter.HolderData
         holder.lokasi_berita.setText(dm.getLokasi_berita());
         holder.nama_sub_kategori.setText(dm.getNama_sub_kategori());
 
-        final String url_images = "https://ujk.yoabsen.com/images/";
+        final String url_images = "https://apps.stkiprosaliametro.ac.id/images/";
         final String dataImage = url_images.concat(dm.getGambar());
         Glide.with(ctx).load(dataImage).apply(new RequestOptions()).into(holder.gambar);
 
@@ -72,6 +76,17 @@ public class BeritaAdapter extends RecyclerView.Adapter<BeritaAdapter.HolderData
             judul_berita = itemView.findViewById(R.id.judul_berita);
             nama_sub_kategori = itemView.findViewById(R.id.nama_sub_kategori);
             lyt_parent = itemView.findViewById(R.id.lyt_parent);
+
+            lyt_parent.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent data = ((Activity) ctx).getIntent();
+                    Intent goInput = new Intent(ctx, DetailNewsActivity.class);
+                    goInput.putExtra("id_berita", dm.getId_berita());
+                    goInput.putExtra("judul_berita", dm.getJudul_berita());
+                    ctx.startActivity(goInput);
+                }
+            });
         }
     }
 }

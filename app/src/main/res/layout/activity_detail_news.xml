@@ -30,18 +30,20 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/nama_sub_kategori"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Pellentesque vel nibh"
+                    android:text="Nama Sub Kategori"
                     android:textAllCaps="true"
                     android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
                     android:textColor="@color/grey_80"
                     app:fontFamily="sans-serif-medium" />
 
                 <TextView
+                    android:id="@+id/nama_kategori"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Proin commodo porttitor"
+                    android:text="Nama Kategori"
                     android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                     android:textColor="@color/grey_40" />
 
@@ -70,6 +72,7 @@
                 android:layout_height="250dp">
 
                 <ImageView
+                    android:id="@+id/gambar"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
@@ -77,8 +80,7 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/overlay_light_30" />
+                    android:layout_height="match_parent" />
 
             </RelativeLayout>
 
@@ -158,42 +160,14 @@
                         android:orientation="vertical">
 
                         <TextView
+                            android:id="@+id/judul_berita"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/spacing_small"
-                            android:text="Suspendisse"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-                            android:textColor="@color/grey_40" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Maecenas venen"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                            android:textColor="@color/grey_80" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/spacing_small"
-                            android:text="Phasellus"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-                            android:textColor="@color/grey_40" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Proin 1256"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                            android:textColor="@color/grey_80" />
+                            android:text="Nama Sub Kategori"
+                            android:textAllCaps="true"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                            android:textColor="@color/grey_80"
+                            app:fontFamily="sans-serif-medium" />
 
                     </LinearLayout>
 
@@ -216,14 +190,15 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/spacing_small"
-                            android:text="Malesuada"
+                            android:text="Lokasi"
                             android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                             android:textColor="@color/grey_40" />
 
                         <TextView
+                            android:id="@+id/lokasi_berita"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Etiam porttitor"
+                            android:text="Indonesia"
                             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                             android:textColor="@color/grey_80" />
 
@@ -239,14 +214,15 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/spacing_small"
-                            android:text="Magna"
+                            android:text="Viewer"
                             android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                             android:textColor="@color/grey_40" />
 
                         <TextView
+                            android:id="@+id/jumlah_berita_dibaca"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Curabitur id"
+                            android:text="100"
                             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                             android:textColor="@color/grey_80" />
 
@@ -260,30 +236,21 @@
                     android:layout_height="1dp"
                     android:background="@color/grey_10" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/spacing_large"
-                    android:layout_marginTop="@dimen/spacing_middle"
-                    android:layout_marginRight="@dimen/spacing_large"
-                    android:text="Description"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                    android:textColor="@color/grey_40"
-                    app:fontFamily="sans-serif-medium" />
-
 
                 <TextView
+                    android:id="@+id/short_desc_berita"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/spacing_large"
                     android:layout_marginTop="@dimen/spacing_middle"
                     android:layout_marginRight="@dimen/spacing_large"
                     android:lineSpacingExtra="@dimen/spacing_small"
-                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "
+                    android:text="Short Desc"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/grey_80" />
 
                 <TextView
+                    android:id="@+id/isi_berita"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/spacing_large"
@@ -291,7 +258,7 @@
                     android:layout_marginRight="@dimen/spacing_large"
                     android:layout_marginBottom="@dimen/spacing_xlarge"
                     android:lineSpacingExtra="@dimen/spacing_small"
-                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "
+                    android:text="Isi Berita Selengkapnya"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/grey_80" />
 

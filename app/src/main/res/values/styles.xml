@@ -213,6 +213,12 @@
         <item name="colorControlNormal">@color/green_400</item>
     </style>
 
+    <style name="EditText.Blue" parent="@style/AppTheme">
+        <item name="colorControlActivated">@color/blue_500</item>
+        <item name="colorControlHighlight">@color/blue_500</item>
+        <item name="colorControlNormal">@color/blue_400</item>
+    </style>
+
     <style name="EditText.Flat.Grey" parent="@style/AppTheme">
         <item name="android:textColorHint">@color/grey_40</item>
         <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Subhead</item>
